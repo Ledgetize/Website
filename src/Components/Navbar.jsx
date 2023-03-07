@@ -1,9 +1,9 @@
 import React from "react";
-
-const Hero = () => {
+import ledgetizelogo from "../assets/LEDGETIZE.svg";
+const Navbar = () => {
   return (
-    <nav className="">
-      <img src="/LEDGETIZE.svg"></img>
+    <nav>
+      <img src={ledgetizelogo} alt="Ledgetize" width="60px" />
       <ul>
         <li>Home</li>
         <li>Features</li>
@@ -14,4 +14,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Navbar;
