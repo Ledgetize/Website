@@ -32,7 +32,11 @@ export default function Landing() {
                     Transparency always looks better
                   </h1>
                   <p className="mt-4 text-lg text-blueGray-200">
-                    Ledgetize es la nueva e innovadora herramienta de software contable diseñada para traders y sus respectivos inversores la cual se enfoca en mejorar el trading usando transparencia, optimización y organización de la gestión de portfolios de inversión.
+                    Ledgetize is the new and innovative accounting software tool
+                    designed for traders and their respective investors that
+                    focuses on improving trading through transparency,
+                    optimization, and organization of investment portfolio
+                    management.
                   </p>
                 </div>
               </div>
@@ -70,8 +74,10 @@ export default function Landing() {
                     </div>
                     <h6 className="text-xl font-semibold">Transparency</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Divide details about your product or agency work into
-                      parts. A paragraph describing a feature will be enough.
+                      Ledgetize provides a transparent platform for traders and
+                      their clients to view investment portfolios and
+                      transactions in real-time, fostering trust and
+                      accountability between both parties.
                     </p>
                   </div>
                 </div>
@@ -85,8 +91,10 @@ export default function Landing() {
                     </div>
                     <h6 className="text-xl font-semibold">Organization</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Keep you user engaged by providing meaningful information.
-                      Remember that by this time, the user is curious.
+                      Ledgetize offers a comprehensive portfolio management
+                      system that enables traders to efficiently organize and
+                      track their investments across multiple markets and
+                      exchanges.
                     </p>
                   </div>
                 </div>
@@ -100,8 +108,9 @@ export default function Landing() {
                     </div>
                     <h6 className="text-xl font-semibold">Optimization</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Write a few lines about each one. A paragraph describing a
-                      feature will be enough. Keep you user engaged!
+                      Ledgetize utilizes advanced analytics and machine learning
+                      algorithms to identify patterns and optimize investment
+                      strategies for traders and their clients.
                     </p>
                   </div>
                 </div>
@@ -110,9 +119,6 @@ export default function Landing() {
 
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-user-friends text-xl"></i>
-                </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Working with us is a pleasure
                 </h3>
@@ -127,9 +133,6 @@ export default function Landing() {
                   good to go. Just make sure you enable them first via
                   JavaScript.
                 </p>
-                <Link to="/" className="font-bold text-blueGray-700 mt-8">
-                  Check Notus React!
-                </Link>
               </div>
 
               <div className="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0 ">
@@ -140,7 +143,7 @@ export default function Landing() {
                     transform:
                       "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
                   }}
-                  src={require("assets/img/ledgetizesoftwarepannel.jpg").default}
+                  src={require("assets/img/ledgetizesoftwarepannel.jpg")}
                 />
               </div>
             </div>
@@ -255,7 +258,7 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-1-800x800.jpg").default}
+                    src={require("assets/img/team-1-800x800.jpg")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -290,7 +293,7 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-3-800x800.jpg").default}
+                    src={require("assets/img/team-3-800x800.jpg")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -325,7 +328,7 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-4-470x470.png").default}
+                    src={require("assets/img/team-4-470x470.png")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
