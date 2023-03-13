@@ -292,7 +292,7 @@ function App() {
                 <div className="px-6">
                   <img
                     alt="Andres Perez"
-                    src="src\assets\img\CarlosGonzalez.jpg"
+                    src="src\assets\img\AndresPerez.jpg"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
