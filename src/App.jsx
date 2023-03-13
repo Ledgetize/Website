@@ -14,14 +14,10 @@ function App() {
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')",
+              background: "linear-gradient(to right, #6a3093, #7D67FF)",
             }}
           >
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
-            ></span>
+            <span id="blackOverlay" className="w-full h-full absolute"></span>
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
