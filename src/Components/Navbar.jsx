@@ -1,64 +1,52 @@
-/*eslint-disable*/
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from 'react'
 
-// components
+import { close, logo, menu } from '../assets';
+import { navLinks } from '../constants'
 
-export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
+
   return (
-    <>
-      <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a className="text-white text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
-              Ledgetize
-            </a>
-            <button
-              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <FontAwesomeIcon icon="fa-solid fa-bars" />
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
-            }
-            id="example-navbar-warning"
+    <nav className="w-full flex py-6 justify-between navbar">
+      <img src={logo} alt="HooBank" className='w-[150px] h-[65px]'></img>
+      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+        {/* el sm: es lo que predefine el mediaquery GRACIAS a TAILWIND*/}
+        {navLinks.map((nav, index) => (
+          <li
+            key={nav.id}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#features"
-                >
-                  Features
-                </a>
-              </li>
-              <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#pricing"
-                >
-                  Pricing
-                </a>
-              </li>
+            <a href={`#${nav.id}`}>
+              {nav.title}
+            </a>
 
-              <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#aboutus"
-                >
-                  About us
+          </li>
+        ))}
+      </ul>
+
+      <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain' onClick={() => setToggle((prev) => !prev)} />
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+          <ul className='list-none flex flex-col justify-end items-center flex-1'>
+            {/* el sm: es lo que predefine el mediaquery GRACIAS a TAILWIND*/}
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}
+              >
+                <a href={`#${nav.id}`}>
+                  {nav.title}
                 </a>
+
               </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
-      </nav>
-    </>
-  );
+      </div>
+
+    </nav>
+  )
 }
+
+export default Navbar

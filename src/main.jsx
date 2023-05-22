@@ -1,12 +1,30 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import Login from './Login'
+import {
+  createBrowserRouter,
+  NavLink,
+  RouterProvider,
+} from "react-router-dom";
+import './index.css'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./assets/styles/tailwind.css";
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login /> ,
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+  },
+  {
+    path:"/",
+    element:<App />,
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <RouterProvider router={router}><App /></RouterProvider>
+  </React.StrictMode>,
+)
+
+
