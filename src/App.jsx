@@ -12,6 +12,8 @@ import {
   Testimonials,
   Hero,
 } from "./components";
+import Contact from "./Components/Contact";
+import Equipo from "./Components/Equipo";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -31,6 +33,8 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Business />
         <Billing />
+        <Equipo />
+        <Contact />
         <Footer />
       </div>
     </div>
