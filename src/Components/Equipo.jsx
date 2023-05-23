@@ -3,9 +3,9 @@ import styles, { layout } from "../style";
 
 const Equipo = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16 z-[99]">
           <h2 className={`${styles.heading2} text-center text-gradient mb-4`}>
             Nuestro Equipo
           </h2>
