@@ -10,13 +10,13 @@ const Hero = () => (
     >
       <div className="flex flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[49px] text-white ss:leading-[100px] leading-[75px]">
-          <span className="text-gradient ">La Transparencia</span> es nuestra{" "}
+          <span className="text-gradient ">Transparency</span> Looks always{" "}
           <br className="sm:block hidden" />{" "}
         </h1>
       </div>
 
       <h1 className="font-poppins font-semibold ss:text-[68px] text-[49px] text-white ss:leading-[100px] leading-[75px] w-full">
-        misión
+        better
       </h1>
       <p className={`${styles.paragraph} max-w-[470px] mt-5}`}>
         La nueva herramienta de contabilidad para inversores y traders. Un
