@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "../style";
-import { discount, robot } from "../assets";
-import GetStarted from "./GetStarted";
 
 const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -25,8 +23,8 @@ const Hero = () => (
     </div>
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <img
-        src="src\assets\img\ledgetizesoftwarepannel.jpg"
-        alt="..."
+        src="../src/assets/img/ledgetizesoftwarepannel.jpg"
+        alt="Dashboard Ledgetize"
         className="max-w-full rounded-lg shadow-xl z-10"
         style={{
           transform:

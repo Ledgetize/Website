@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
+import Caracteristicas from "./Caracteristicas";
 import CardDeal from "./CardDeal";
 import Business from "./Business";
 import Clients from "./Clients";
@@ -11,7 +11,7 @@ import Hero from "./Hero";
 
 export {
   Navbar,
-  Billing,
+  Caracteristicas,
   CardDeal,
   Business,
   Clients,

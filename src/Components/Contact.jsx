@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div class="w-full flex items-center justify-center my-10">
+    <div id="contact" class="w-full flex items-center justify-center my-10">
       <div className="absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full blue__gradient" />
       <div class="bg-transparent border-gradient shadow rounded py-16 lg:px-28 px-8">
         <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">

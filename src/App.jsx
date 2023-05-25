@@ -2,7 +2,6 @@ import styles from "./style";
 
 import {
   Navbar,
-  Billing,
   CardDeal,
   Business,
   Clients,
@@ -11,9 +10,10 @@ import {
   Footer,
   Testimonials,
   Hero,
+  Caracteristicas,
 } from "./components";
 import Contact from "./Components/Contact";
-import Equipo from "./Components/Equipo";
+import Carteras from "./Components/Carteras";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -32,8 +32,9 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Business />
-        <Clients />
-        <Billing />
+        <Caracteristicas />
+        <Carteras />
+        <CardDeal />
         <Contact />
         <Footer />
       </div>
